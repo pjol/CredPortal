@@ -23,3 +23,5 @@ Then, start the project!
 ```bash
 npm run dev
 ```
+
+If you would like to add additional creds to the list, just edit the defaultContracts.js file in the src/app directory, and follow the template.
