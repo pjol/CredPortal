@@ -5,6 +5,7 @@ const CredCard = ({ chainId, contractAddress, name, metadata }) => {
   const router = useRouter()
 
   const cardStyle = {
+    display: "inline-block",
     color: "black",
     textAlign: "center",
     margin: "min(50px, 10vw)",
