@@ -32,11 +32,12 @@ const CredChecker = ({ chainId, contractAddress, name, getCred }) => {
     await p.request({method: "eth_requestAccounts"})
     const acc = await p.request({method: "eth_accounts"})
     await p.disconnect()
+    getCred(acc[0], chainId, contractAddress)
     setAccounts(acc)
   }
 
   return (
-    <div style={{color: "white"}} onClick={connect}>
+    <div style={{color: "black"}} onClick={connect}>
       <p>Chain ID: {chainId}</p>
       <p>Address: {contractAddress}</p>
       <p>Name: {name}</p>
